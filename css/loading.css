@@ -18,12 +18,47 @@
 	display: flex;
 	width:400px;
 	justify-content: space-between;
+	
 
 }
 
 .circle{
 	width:100px;
 	height:100px;
-	border: 1px solid #000;
+	background-color: #eee;
 	border-radius: 50%;
+	animation-name:changingOp;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
+#c2{
+	animation-delay: 0.5s;
+}
+#c4{
+	animation-delay: 1s;
+}
+#c6{
+	animation-delay: 1.5s;
+}
+#c5{
+	animation-delay: 2s;
+}
+#c3{
+	animation-delay: 2.5s;
+}
+
+
+
+#top{
+	margin-bottom: 50px;
+}
+
+@keyframes changingOp{
+	0%{
+		background-color: #eee;
+	}
+	1%{
+		background-color: #237482;
+	}
+}
+
